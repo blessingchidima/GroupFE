@@ -4,6 +4,7 @@ import SignLayout from "../Components/Common/SignLayout";
 import Register from "../pages/Auth/Register";
 import Sigin from "../pages/Auth/Sigin";
 import HomeScreen from "../pages/HomeScreen";
+import PrivateRoutes from "./PrivatRoutes";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -27,7 +28,11 @@ export const mainRouter = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomeScreen />
+        element: 
+        <PrivateRoutes>
+           <HomeScreen />
+        </PrivateRoutes>
+       
       },
     ],
   },
