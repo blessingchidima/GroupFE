@@ -32,7 +32,7 @@
 // export default App
 
 import { RouterProvider } from 'react-router-dom'
-import { mainRoutes } from './Routes/mainRoutes'
+import  mainRoute  from './Routes/mainRoutes'
 import { Provider } from 'react-redux'
 import { store } from './Global/Store'
 import {PersistGate} from "redux-persist/integration/react"
